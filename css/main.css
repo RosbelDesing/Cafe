@@ -1,0 +1,310 @@
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+*::before, *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: rgb(65, 27, 9);   
+} 
+
+/* Estilos del header */
+.header{
+    width:100%;
+    display:flex;
+    position:fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding:8px;
+    background-color: rgb(141, 52, 5);
+    z-index:1;
+}
+
+/* Texto del logo */
+.text-logo {
+    color:#fff;
+    font-size:20px;
+}
+
+/* Contenedor logo*/
+.container-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:40px;
+}
+
+/* Imagen logo*/
+.img-logo{
+    width:30px;
+    margin-right: 10px;
+}
+
+/* Contenedor del menu*/
+.nav-menu{
+    margin-right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Elementos del menu*/
+.link {
+    text-decoration: none;
+    color:#fff;
+    font-size:20px;
+    margin:10px;
+}
+
+.section2{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(141, 52, 5);
+    padding:10px;
+    color:#fff;
+}
+
+.section2-part1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:5px;
+}
+
+.section2-part1-img{
+    margin-right: 5px;
+}
+
+
+
+/*Sección uno*/
+.section1 {
+    width:100%;
+    height:400px;
+    background-image: url(/image/cafe-fondo.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+}
+
+/*Cambiar tamaño de la imagen*/
+@media (max-width:620px) {
+    .section1{
+        height: 300px;
+    }  
+}
+
+
+
+.layer-in{
+    width:100%;
+    height:400px;
+    background-color: rgba(0, 0, 0, 0.637);
+}
+
+@media (max-width:620px) {
+    .layer-in{
+        height: 300px;
+    }  
+}
+
+
+
+.text-container{
+    width:100%;
+    height:400px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    color:#fff;
+    margin:5px;
+    text-align: center;
+}
+
+
+.ofertas{ 
+    margin:30px;
+    color:#fff;
+    font-size:25px;
+    font-weight: 300;
+}
+
+.productos-container {
+    display:flex;
+    flex-wrap: wrap;
+    margin-top:40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloque{
+    width:200px;
+    margin:25px;
+    background-color: rgb(141, 52, 5);
+    box-shadow:4px 4px 4px rgba(0, 0, 0, 0.452);
+    cursor:pointer;
+}
+
+.bloque:hover{
+    transition:0.4s;
+    transform:scale(1.05);
+}
+
+.bloque:active{
+    opacity:0.3;
+}
+.protucto-img{
+    width:200px;
+}
+
+.info-container{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    margin:7px;
+}
+
+.precio{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+
+.img-cafe{
+    margin-left:6px;
+}
+
+.text-precio{
+    color:#fff;
+    margin-right: 6px;
+}
+
+.estrella-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.estrella{
+    width:15px;
+    margin:3px;
+}
+
+
+.nav-toggle {
+    background:none;
+    width:50px;
+    padding:0 20px;
+    align-items: center;
+    justify-content: center;
+    display:none;
+    border-style: none;
+}
+
+/* --Menu version movil-- */
+.hamburguesa  {
+    width:30px;
+    cursor:pointer;
+}
+
+@media (max-width:800px) {
+
+    .header {
+        height: 60px;
+        position:fixed;
+    }
+   
+    .nav-toggle {
+        display:block;
+    }
+
+    .nav-menu {
+        display:flex;
+        flex-direction: column;
+        margin-right: 20px;
+        background-color:rgb(31, 14, 6);
+        position:fixed;
+        left:0;
+        top:60px;
+        width:100%;
+        padding-top:30px;
+    
+        height: 100vh;
+        overflow-y:auto;
+
+        left:100%;
+        transition:left 0.5s;
+    }
+
+    .nav-menu-visible {
+        left:0;
+    }
+}
+
+
+
+.slider {
+    width:800px; /* --Poner ancho de las imagenes-- */
+    overflow:hidden;
+    padding-top:40px;
+    margin:auto;
+}
+
+@media (max-width:800px) {
+    .slider {
+        width:100%;/* --Poner en % para que se adapte-- */
+        overflow:hidden;
+        padding-top:40px;
+        margin:auto;
+    }   
+}
+
+.slider ul {
+    padding:0;
+    display:flex;
+    width:100%;
+    height:100%;
+    animation: cambio 25s infinite;
+    animation-direction: alternate;
+}
+
+.slider li {
+    width:100%;
+    height: 503px;
+    list-style: none;
+}
+
+
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    50%{margin-left: -100%;}
+
+    70%{margin-left: -200%;}
+    100%{margin-left: -200%;}
+}
+
+.instalaciones{
+    text-align: center;
+    color:#fff;
+    font-size:24px;
+    margin:10px;
+    margin-top:40px;
+}
