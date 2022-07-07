@@ -88,31 +88,18 @@ body{
 
 /*Sección uno*/
 .section1 {
-    width:100%;
     height:100vh;
-    background-image:url(cafe-fondo.jpg);
+    background-image:url(slider4.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center center;
 }
 
-/*Cambiar tamaño de la imagen*/
-@media (max-width:620px) {
-    .section1{
-        height: 100vh;
-    }  
-}
 
-
-
+    
 .layer-in{
-    width:100%;
-    height:100%;
-    background-color: rgba(0, 0, 0, 0.637);
+    background-color: rgba(0, 0, 0, 0.514);
 }
-
-
-
 
 
 .text-container{
