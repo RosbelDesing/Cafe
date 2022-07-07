@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
     <script defer src="./js/menu2.js"></script>
+    <script defer src="./js/search.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -14,32 +15,44 @@
             <img src="./image/icons8-cafe-30.png" alt="imagen" class="img-logo">
             <span class="text-logo">Mary's Cafe</span>
         </div>
-        <button class="nav-toggle">
-            <img src="./image/pngwing.com.png" alt="" class="hamburguesa">
-        </button>
+        <div class="container-botones">
+            <div class="container-buscador-inicial">
+                <button class="btn" id="btn">
+                <img src="./image/icons8-google-web-search-50.png" alt="imagen" class="img-buscador-inicial">
+                </button>
+            </div>
+            <button class="nav-toggle">
+                <img src="./image/pngwing.com.png" alt="" class="hamburguesa">
+            </button>
+       </div>
         <nav class="nav-menu">
             <div class="container-cafe">
                 <img src="./image/cafe.png" alt="img" class="cafe">
             </div>
             <a href="#" class="link">Inicio</a>
-            <a href="#" class="link">Ofertas</a>
+            <a href="#" class="link">Productos</a>
             <a href="#" class="link">Sobre</a>
             <a href="#" class="link">Contacto</a>
-            <div class="container-logo">
-                <img src="./image/icons8-carrito-de-la-compra-cargado-50.png" alt="imagen" class="img-logo carrito">
-            </div>
         </nav>
     </header>
 
-  
+    
+
+    
     <section class="section1">
         <div class="layer-in">
+            <input class="search-box1" type="text" placeholder="Buscar..." id="search-box1">
             <div class="text-container">
                 <h1 class="text">Ordene su café favorito online</h1>
                 <h3 class="text">Nuevas sensaciones</h3>
             </div>
         </div>
     </section>
+
+    <script src="./js/desplegar.js"></script>
+
+    
+
 
     <section class="section2">
         <div class="section2-part1">
