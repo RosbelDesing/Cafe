@@ -229,6 +229,8 @@ body{
         flex-direction: column;
         margin-right: 20px;
         position:fixed;
+        justify-content: center;
+        justify-content:flex-start;
         left:0;
         top:60px;
         width:100%;
@@ -268,6 +270,7 @@ body{
 
     .container-cafe{
         display:block;
+        margin-top:15%;
     }
 }
 
