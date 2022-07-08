@@ -426,7 +426,7 @@ body{
 
 .texto-blog{
     text-align: justify;
-    margin-top:5px;
+    margin-top:14px;
 }
 
 .beneficios-list{
@@ -443,6 +443,7 @@ body{
     width:300px;
     margin-top:10px;
     margin-right:20px;
+    margin-bottom: 10px;
     float:left;
     border-radius:6px;
     border-color:#fff;
@@ -463,7 +464,8 @@ body{
 
 @media (max-width:500px) {
     .img-blog{
-        width:200px;
+        width:150px;
     }
     
 }
+
