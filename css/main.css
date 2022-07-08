@@ -406,3 +406,64 @@ body{
     top:0;
     
 }
+
+
+/* --Seccion blog-- */
+
+.blog-title{
+    margin:15px;
+}
+
+.beneficios-cafe{
+    color:#fff;
+    margin:20px;
+    margin-top:60px;
+}
+
+.beneficios-title{
+    margin-top:30px;
+}
+
+.texto-blog{
+    text-align: justify;
+    margin-top:5px;
+}
+
+.beneficios-list{
+    margin:8px;
+    list-style:none;
+    text-align:justify;
+}
+
+.beneficios{
+    margin:5px;
+}
+
+.img-blog{
+    width:300px;
+    margin-top:10px;
+    margin-right:20px;
+    float:left;
+    border-radius:6px;
+    border-color:#fff;
+    border-style:solid;
+    border-width:0.8px;
+}
+
+.img-blog-derecha{
+    width:300px;
+    margin-top:10px;
+    margin-left:20px;
+    float:right;
+    border-radius:6px;
+    border-color:#fff;
+    border-style:solid;
+    border-width:0.8px;
+}
+
+@media (max-width:500px) {
+    .img-blog{
+        width:200px;
+    }
+    
+}
