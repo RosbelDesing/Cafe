@@ -25,6 +25,7 @@ body{
     padding:8px;
     background-color: rgb(141, 52, 5);
     z-index:1;
+    
 }
 
 /* Texto del logo */
@@ -407,13 +408,13 @@ body{
 /* --Seccion blog-- */
 
 .blog-title{
-    margin:15px;
+    margin:25px;
+    color:#fff;
 }
 
 .beneficios-cafe{
     color:#fff;
     margin:20px;
-    margin-top:60px;
     background-color:rgb(141, 52, 5);
     padding:20px;
     border-radius:20px;
@@ -480,6 +481,11 @@ body{
     display:flex;
     justify-content:space-evenly;
     align-items: center;
+    background-color:rgb(141, 52, 5);
+    margin:20px;
+    border-color:#fff;
+    border-radius:20px;
+    border-style:solid;
 }
 
 .mapa {
