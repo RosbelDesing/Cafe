@@ -471,7 +471,7 @@ body{
 
 .contacto-tile {
     color:#fff;
-    margin-top:20px;
+    margin-top:45px;
 }
 .google-maps{
     text-align: center;
@@ -570,6 +570,8 @@ body{
     font-weight: 400;
 }
 
+
+
 @media (max-width:450px) {
     form {
         padding:3.5em 1;
@@ -581,4 +583,31 @@ body{
     width:300px;
     }
 
+}
+
+/* --Sobre nosotros -- */
+.nosotros-container{
+    margin-top:20px;
+    color:#fff;
+    background-image: url(/image/nosotros-fondo.jpg);
+    background-position: center center;
+}
+
+.capa-nosotros{
+    width:100%;
+    background-color:rgba(0, 0, 0, 0.658);
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+
+.nosotros-title{
+    color:#fff;
+    text-align:center;
+    margin-bottom: 10px;
+    margin-top:20px;
+}
+
+.nosotros-text{
+    text-align: justify;
+    margin:20px;
 }
