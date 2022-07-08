@@ -395,11 +395,7 @@ body{
     font-size: 18px;
     transition:0.5s;
     top:-100%;
-    
-
-
-
-    
+      
 }
 
 .search-box1-visible{
@@ -418,6 +414,12 @@ body{
     color:#fff;
     margin:20px;
     margin-top:60px;
+    background-color:rgb(141, 52, 5);
+    padding:20px;
+    border-radius:20px;
+    border-color:#fff;
+    border-style:solid;
+    border-width:3px;
 }
 
 .beneficios-title{
@@ -586,28 +588,49 @@ body{
 }
 
 /* --Sobre nosotros -- */
-.nosotros-container{
-    margin-top:20px;
-    color:#fff;
-    background-image: url(/image/nosotros-fondo.jpg);
-    background-position: center center;
-}
-
-.capa-nosotros{
-    width:100%;
-    background-color:rgba(0, 0, 0, 0.658);
-    padding-top:20px;
-    padding-bottom: 20px;
-}
-
 .nosotros-title{
+    text-align: center;
     color:#fff;
-    text-align:center;
-    margin-bottom: 10px;
-    margin-top:20px;
+    margin-top:30px;
 }
 
-.nosotros-text{
-    text-align: justify;
+
+.nosotros-container{
+    display:flex;
     margin:20px;
+    color:#fff;
+    padding:20px;
+    background-color:rgb(141, 52, 5);
+    border-radius:20px;
+    border-color:#fff;
+    border-style:solid;
+    border-width:3px;
+}
+
+
+
+.img-nosotros{
+    width:400px;
+}
+
+.texto-nosotros{
+    margin-left:20px;
+    text-align: justify;
+}
+
+
+@media (max-width:768px) {
+    .nosotros-container{
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .texto-nosotros{
+        margin-top:5px;
+    }
+    
+    .img-nosotros{
+        width:250px;
+    }
 }
