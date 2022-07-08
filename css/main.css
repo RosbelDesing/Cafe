@@ -471,16 +471,18 @@ body{
 
 .contacto-tile {
     color:#fff;
-    margin:5px;
-    margin-top:10px;
+    margin-top:20px;
 }
 .google-maps{
-    text-align: center; 
+    text-align: center;
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
 }
 
 .mapa {
     border-radius:5px;
-    margin:5px;
+    margin:10px;
 }
 
 @media (max-width:640px) {
@@ -488,5 +490,95 @@ body{
         width:300px;
         height: 300px;
     }
+
+    .google-maps{
+        flex-direction:column;
+    }
     
+}
+
+.form {
+    background-color: #fff;
+    width:400px;
+    height: 350px;
+    border-radius:1em;
+    padding:40px;
+}
+
+/* --Heredar la fuente-- */
+.form-input{
+    font-family: inherit;
+    margin:5px;
+}
+
+.form-cta{
+    font-family: inherit;
+}
+
+
+.form-container {
+    display:flex;
+    flex-direction:column;
+    width:100%;
+}
+
+.form-title {
+    
+    font-size:1.9em;
+    margin-bottom:.4em;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* --Imagen del correo-- */
+.correo{
+    width:30px;
+    margin-right: 4px;
+}
+
+/* --Trabajar con los campos -- */
+
+/* --Texto que aparece en los campos:name,email,message -- */
+.form-input{
+    font-family:inherit;
+    font-size:1rem;
+    padding:.8em 1em;
+    outline: none;
+    border: none;
+    border:1px solid #bbb0b0;
+    border-radius:0.2em;
+
+}
+
+.form-input--message {
+    resize: none;
+    padding:1.8em 1em;
+    margin-bottom: .5em;
+}
+
+.form-cta{
+    font-family:inherit;
+    font-size: 1rem;
+    background-color: rgb(141, 52, 5);
+    color:#fff;
+    border:none;
+    padding:.7em 0;
+    border-radius: .2em;
+    cursor:pointer;
+    font-weight: 400;
+}
+
+@media (max-width:450px) {
+    form {
+        padding:3.5em 1;
+    }
+}
+
+@media (max-width:640px) {
+    .form{
+    width:300px;
+    }
+
 }
