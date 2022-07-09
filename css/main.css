@@ -413,10 +413,6 @@ body{
 
 /* --Seccion blog-- */
 
-.blog-title{
-    margin:25px;
-    color:#fff;
-}
 
 .beneficios-cafe{
     color:#fff;
@@ -758,3 +754,94 @@ i:hover{
     
 }
 
+/* --Este es el blog con diferentes entradas -- */
+
+.blog-title{
+    color:#fff;
+}
+
+.blog-container{
+    padding:10px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-container{
+    width:300px;
+    background-color: rgb(150, 64, 7);
+    border-color:#fff;
+    border-style:solid;
+    border-width:2px;
+    margin:20px;
+}
+
+.post-container:hover{
+    transition:0.3s;
+    box-shadow: 3px 3px 3px #fff;
+}
+
+.img-post{
+    width:100%;
+}
+
+.desc-container{
+    color:#fff;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.post-title{
+    font-size:18px;
+    margin-bottom:6px;
+    text-align: center;
+}
+
+.post-date{
+    font-size:13px;
+    color:rgb(240, 223, 223);
+}
+
+.post-info{
+    font-size:10px;
+    text-align:center;
+    margin:4px;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.img-post-container{
+    overflow:hidden;
+}
+
+.link-boton{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration:none;
+}
+.btn-mas{
+    margin:5px;
+    padding:5px;
+    background-color:rgb(65, 27, 9) ;
+    border-color:#fff;
+    color:#fff;
+    border-radius:4px;
+    cursor:pointer;
+}
+
+.btn-mas:hover{
+    transition:.5s;
+    padding-right: 20px;
+    padding-left: 20px;
+    
+}
+
+.img-post:hover{
+    transition: 500ms;
+    transform:scale(1.1);
+}
