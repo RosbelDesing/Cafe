@@ -853,3 +853,21 @@ i:hover{
     transition: 500ms;
     transform:scale(1.1);
 }
+
+
+#productos{
+    scroll-margin-top: 60px;
+}
+
+#contacto{
+    scroll-margin-top: 60px;
+}
+
+#nosotros{
+    scroll-margin-top: 60px;
+}
+
+#blog{
+    scroll-margin-top: 60px;
+}
+
