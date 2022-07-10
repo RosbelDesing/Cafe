@@ -9,11 +9,15 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+html{
+    scroll-behavior: smooth;
+}
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans&family=Roboto:wght@100&family=Yanone+Kaffeesatz:wght@300&display=swap');
 body{
     background-color: rgb(65, 27, 9);   
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-} 
+}
 
 /* Estilos del header */
 .header{
@@ -101,6 +105,26 @@ body{
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center center;
+}
+
+.fa-circle-arrow-down{
+    margin-top:50px;
+    background-color:none;
+    color:rgb(141, 52, 5);
+    font-size:60px;
+    cursor:pointer;
+    border-radius:50%;
+    border-style:solid;;
+    border-color:#fff;
+    background-color:#fff;
+}
+
+.fa-circle-arrow-down:hover{
+    transition:0.4s;
+    background-color:rgb(141, 52, 5);
+    color:rgb(139, 139, 139);
+    border-color:rgb(141, 52, 5);
+
 }
 
 
@@ -223,11 +247,23 @@ body{
     display:none;
 }
 
+.mod-low{
+    display:none;
+}
+
 @media (max-width:800px) {
 
     .header {
         height: 60px;
         position:fixed;
+    }
+
+    .mod-low{
+        display:block;
+    }
+
+    .mod-full{
+        display:none;
     }
    
     .nav-toggle {
@@ -725,7 +761,7 @@ body{
 }
 
 
-i {
+.fa-facebook,.fa-twitter,.fa-instagram-square,.fa-linkedin {
     font-size:30px;
     background-color:rgb(65, 27, 9);
     color:rgb(150, 64, 7);
@@ -737,7 +773,7 @@ i {
     border-width:1px;
 }
 
-i:hover{
+.fa-facebook:hover,.fa-twitter:hover,.fa-instagram-square:hover,.fa-linkedin:hover{
     transition:0.4s;
     background-color:rgb(139, 139, 139);
     color:rgb(65, 27, 9);
@@ -870,4 +906,9 @@ i:hover{
 #blog{
     scroll-margin-top: 60px;
 }
+
+#instalaciones{
+    scroll-margin-top: 60px;
+}
+
 
