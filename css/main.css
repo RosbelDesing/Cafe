@@ -912,10 +912,11 @@ body{
 }
 
 
-span{
+#comentariosFacebook .UFICommentActorName{ 
     color:#fff;
 }
 
-.UFICommentAtorName{
-    color:rgb(233, 212, 212);
+.fb-comments{
+    color:#fff;
+    background-color:#fff;
 }
