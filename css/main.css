@@ -932,4 +932,7 @@ body{
 
 #facebook-color{
     background-color:#fff;
+    height: 400px;
+    overflow-y: scroll;
 }
+
