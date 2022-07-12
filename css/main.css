@@ -912,11 +912,24 @@ body{
 }
 
 
-#comentariosFacebook .UFICommentActorName{ 
+#comentariosFacebook { 
+    margin-top:10px;
+    background-color: rgb(150, 64, 7);
+    padding-top:10px;
+    padding-bottom:10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.comentarios-title{
     color:#fff;
+    font-size:28px;
+    margin:10px;
+    font-weight: bold;
 }
 
 .fb-comments{
-    color:#fff;
     background-color:#fff;
 }
